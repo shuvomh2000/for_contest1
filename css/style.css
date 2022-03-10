@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+:root {
+    --hover: #ea3a60;
+    --title-color: #232323;
+    --theme-color: #2E3466;
+    --paragraph: #555;
+    --transition: all linear .3s;
+    --roboto: 'Roboto', sans-serif;
+    --popins: 'Poppins', sans-serif;
+    --monostreat: 'Montserrat', sans-serif;
+}
+
+
+
+/* =================================
+            nav CSS START
+==================================*/
+#nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+#nav .nav_logo {
+    width: 50px;
+}
+
+#nav .main_mneu li a {
+    color: #2E3466;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--popins);
+    letter-spacing: 1px;
+    padding: 0 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+#nav .main_mneu li a:after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: var(--theme-color);
+    transition: var(--transition);
+}
+
+#nav .main_mneu li a:hover:after{
+    width: 100%;
+}
+
+#nav .banner_img img {
+    width: 100%;
+}
+
+/* =================================
+            nav CSS END
+==================================*/
+/* =================================
+            BANNER CSS START
+==================================*/
+#banner {
+    padding: 100px 0;
+}
+
+#banner .banner_text {
+    margin-top: 50px;
+}
+
+#banner .banner_text h1 {
+    color: var(--theme-color);
+    font-size: 50px;
+    font-weight: 500;
+    font-family: var(--popins);
+}
+
+#banner .banner_text h4 {
+    color: var(--theme-color);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--popins);
+}
+
+#banner .banner_text h2 {
+    color: var(--theme-color);
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--popins);
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+#banner .banner_text p {
+    color: var(--theme-color);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--popins);
+    text-transform: lowercase;
+    padding-right: 45px;
+    margin-top: 20px;
+}
+
+#banner .banner_text a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: var(--popins);
+    text-transform: uppercase;
+    background: var(--theme-color);
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* =================================
+            BANNER CSS END
+==================================*/
+
+/* =================================
+            about CSS START
+==================================*/
+
+#about .heading .heading_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#about .heading .heading_title span {
+    font-size: 40px;
+    background: hsla(234, 38%, 29%, 0.45);
+    color: #fff;
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-transform: uppercase
+}
+
+#about .heading .heading_title .space {
+    background: none;
+}
+
+
+#about .about_text {
+    margin-top: 80px;
+}
+
+#about .about_text h2 {
+    color: var(--theme-color);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--popins);
+
+}
+
+#about .about_text p {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--popins);
+    padding-right: 70px;
+}
+
+#about .about_text .accordion {
+    margin-top: 20px;
+}
+
+#about .about_text .accordion-item {
+    border: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.111);
+    margin-bottom: 10px;
+}
+
+#about .about_text .collapsed {
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--popins);
+}
+
+#about .about_text .accordion-button {
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--popins);
+    border-left: 5px solid var(--theme-color);
+}
+
+/* #about .about_tex .accordion-header{
+} */
+
+#about .about_text .accordion-body {
+    color: #fff;
+    background: var(--theme-color);
+}
+
+/* =================================
+            about CSS END
+==================================*/
+/* =================================
+            service CSS START
+==================================*/
+#service {
+    padding: 90px 0;
+}
+
+#service .heading .heading_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#service .heading .heading_title span {
+    font-size: 40px;
+    background: hsla(234, 38%, 29%, 0.45);
+    color: #fff;
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-transform: uppercase
+}
+
+#service .card {
+    padding: 30px 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(46, 52, 102, 0.131);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+#service .card .top_icon {
+    color: var(--theme-color);
+    font-size: 25px;
+    transition: var(--transition);
+}
+
+#service .card h4 {
+    color: var(--theme-color);
+    font-family: var(--popins);
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: var(--transition);
+}
+
+#service .card p {
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+
+#service .card .right_arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(46, 52, 102, 0.8);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    transform: translateX(-200%);
+    transition: all linear .5s;
+}
+
+#service .card:hover {
+    background: var(--theme-color);
+}
+
+#service .card:hover h4 {
+    color: #fff;
+}
+
+#service .card:hover p {
+    color: #f1f1f1;
+}
+
+#service .card:hover .top_icon {
+    color: #fff;
+}
+
+#service .card:hover .right_arrow {
+    display: block;
+    transform: translateX(0%);
+    color: var(--theme-color);
+    background: #fff;
+}
+
+/* =================================
+            service CSS END
+==================================*/
+
+/* =================================
+            client CSS START
+==================================*/
+#client {
+    padding: 90px 0;
+    text-align: center;
+}
+
+
+/* =================================
+            client CSS END
+==================================*/
+
+/* =================================
+            blog CSS START
+==================================*/
+#blog {
+    padding: 90px 0;
+}
+
+#blog .heading .heading_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#blog .heading .heading_title span {
+    font-size: 40px;
+    background: hsla(234, 38%, 29%, 0.45);
+    color: #fff;
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-transform: uppercase
+}
+
+#blog .heading .heading_title .space {
+    background: none;
+}
+
+#blog .blog_img {
+    overflow: hidden;
+
+}
+
+#blog .blog_img img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+
+#blog .blog_text {
+    position: relative;
+}
+
+#blog .blog_text .blog_date {
+    width: 90px;
+    background: var(--theme-color);
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top: -60px;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+#blog .blog_text .blog_date h5 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#blog .blog_text .blog_date h6 {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+#blog .blog_text {
+    background: #f7f7f7;
+    padding: 40px 30px;
+}
+
+#blog .blog_text h3 {
+    color: var(--theme-color);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#blog .blog_text h3 .text_span {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#blog .blog_text p {
+    color: #555;
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#blog .blog_text a {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 15px;
+    line-height: 30px;
+    background: var(--theme-color);
+    margin-top: 10px;
+}
+
+
+#blog .blog_img:hover img {
+    transform: scale(1.2);
+}
+
+/* =================================
+            blog CSS END
+==================================*/
+/* =================================
+            contact CSS START
+==================================*/
+#contact{
+    padding-bottom: 60px;
+}
+
+#contact .heading .heading_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#contact .heading .heading_title span {
+    font-size: 40px;
+    background: rgba(46, 51, 102, 0.45);
+    color: #fff;
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+
+
+#contact .form {
+    padding: 50px;
+}
+
+#contact .form h4 {
+    color: var(--theme-color);
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+#contact .form input,
+#contact .form textarea {
+    color: #fff;
+    background: none;
+    resize: none;
+    padding: 2px 10px;
+}
+
+#contact button {
+    color: #fff;
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 600;
+    background: var(--theme-color);
+    border-color: #fff;
+}
+
+
+#contact .contact_img img{
+    width: 100%;
+    max-width: 100%;
+}
+/* =================================
+            contact CSS END
+==================================*/
+/* =================================
+            footer CSS START
+==================================*/
+#footer{
+    background: rgba(46, 52, 102, 0.7);
+    padding: 40px 0;
+}
+
+#footer .footer_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#footer .footer_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer .footer_menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--popins);
+    letter-spacing: 1px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+#footer .footer_icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#footer .footer_icon li a{
+    color: var(--theme-color);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 15px;
+}
+/* =================================
+            footer CSS END
+==================================*/
